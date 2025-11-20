@@ -107,3 +107,15 @@ The AI-based system allows significantly more vehicles to pass through compared 
 ```bash
 git clone https://github.com/<your-username>/smart-traffic-light-controller.git
 cd smart-traffic-light-controller
+
+```
+
+## 📦 YOLO Model Weights
+
+The YOLO model file (e.g., `yolov8s.pt`) is **not included** in this repository due to file size limits.
+
+The script will automatically download the required model when you run:
+
+```python
+from ultralytics import YOLO
+model = YOLO("yolov8s.pt")  # auto-downloads model if missing
